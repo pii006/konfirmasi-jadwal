@@ -1,21 +1,23 @@
-/* styles.css */
+
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f9f9f9;
+
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 body.dark-mode {
   background: #121212;
   color: #e0e0e0;
 }
 
 .verification-container {
-  background: #fff;
+  background: #264653#fff;
   padding: 2rem 2.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -39,7 +41,7 @@ body.dark-mode h1 {
 }
 
 input[type="text"] {
-  width: 100%;
+  width: 90%;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   border: 2px solid #ccc;
@@ -50,7 +52,7 @@ input[type="text"] {
 input[type="text"]:focus {
   border-color: #2a9d8f;
   box-shadow: 0 0 8px rgba(42, 157, 143, 0.6);
-  background-color: #fff;
+  background-color: #5388de;
   color: #000;
 }
 body.dark-mode input[type="text"] {
