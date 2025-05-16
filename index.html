@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verifikasi Kode Pemesanan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="verification-container" role="main" aria-label="Form Verifikasi Kode Pemesanan">
+    <h1>Verifikasi Kode Pemesanan</h1>
+    <form id="verifyForm" novalidate>
+      <label for="kodePemesanan" class="visually-hidden">Masukkan Kode Pemesanan</label>
+      <input type="text" id="kodePemesanan" name="kodePemesanan" placeholder="Masukkan kode pemesanan..." autocomplete="off" aria-describedby="feedback" required />
+      <button type="submit" aria-label="Verifikasi Kode Pemesanan">Verifikasi</button>
+      <div id="feedback" role="alert" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <!-- Popup Verifikasi -->
+  <div id="customPopup" class="popup"></div>
+
+  <!-- Popup Gabung Zoom -->
+  <div id="zoomPopup" class="popup zoom-popup">
+    <p>Link sesi Zoom anda:</p>
+    <a id="zoomLink" href="#" target="_blank" class="zoom-button">Gabung Zoom</a>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
